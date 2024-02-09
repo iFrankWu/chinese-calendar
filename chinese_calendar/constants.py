@@ -561,6 +561,7 @@ holidays = {
     datetime.date(year=2023, month=12, day=30): Holiday.new_years_day.value,
     datetime.date(year=2023, month=12, day=31): Holiday.new_years_day.value,
     datetime.date(year=2024, month=1, day=1): Holiday.new_years_day.value,
+    datetime.date(year=2024, month=2, day=9): Holiday.spring_festival.value,
     datetime.date(year=2024, month=2, day=10): Holiday.spring_festival.value,
     datetime.date(year=2024, month=2, day=11): Holiday.spring_festival.value,
     datetime.date(year=2024, month=2, day=12): Holiday.spring_festival.value,
