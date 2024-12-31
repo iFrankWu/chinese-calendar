@@ -8,17 +8,33 @@
 判断某年某月某一天是不是工作日/节假日。
 支持 2004年 至 2025年，包括 2020年 的春节延长。
 
-## 安装
+## 安装（开源的）
 
 ```
 pip install chinesecalendar
 ```
 
-## 升级
+## 升级 （升级开源的）
 
 ```
-pip install -U chinesecalendar
+pip install -U chinesecalendar 
 ```
+
+# install from source codes （本地安装需要这样）
+```
+cd /home/ubuntu/workspace/chinese-calendar
+pip install .
+
+```
+
+
+执行下面的测试case
+```
+lpc/test/chinese_calendar_test.py
+升级后 务必执行这条sql 进行验证 2024-02-09 A股不开盘
+
+```
+
 
 由于次年的节假日安排，取决于国务院发布的日程。
 所以本项目一般会在国务院更新以后，发布新的版本。
@@ -64,5 +80,5 @@ assert chinese_calendar.is_in_lieu(datetime.date(2006, 2, 2)) is True
 [scripts/__init__.py]: https://github.com/LKI/chinese-calendar/blob/master/chinese_calendar/scripts/__init__.py
 
 
-# install from source codes
-pip install .
+
+
